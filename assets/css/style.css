@@ -453,6 +453,7 @@ header .navbar ul li a:hover {
 .about {
   background-color: #000000;
   min-height: 100vh;
+  justify-content: center;
 }
 
 .about .heading {
@@ -475,8 +476,8 @@ header .navbar ul li a:hover {
 }
 .about .row .image {
   text-align: center;
-  flex: 1 1 35rem;
   display: flex;
+  flex: 1 1 35rem;
 }
 .about .row .image img {
   margin: 1rem;
