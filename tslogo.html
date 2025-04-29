@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TS Page</title>
+  <style>
+    .lowercase {
+      text-transform: lowercase;
+    }
+    body {
+      background-color: #000;
+      height: 100vh;
+      margin-top: 0rem; /* Fixed the typo */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; /* Better spacing */
+      color: white;
+      font-family: "ubuntu", sans-serif;
+      overflow: hidden;
+      padding: 1rem 0;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .la-container, .ts-container, .ra-container {
+      display: inline-flex;
+      align-items: center;
+      font-weight: bolder;
+    }
+
+    .la-container, .ra-container {
+      font-size: 4vw; /* Slightly reduced */
+    }
+
+    .ts-container {
+      font-size: 36vw; /* Reduced from 40vw to fit nicely */
+      line-height: 1;
+    }
+
+    .ts-container .t {
+      color: #ffae00;
+    }
+
+    .ts-container .s {
+      color: white;
+    }
+
+    .ra-container .ra {
+      color: #ffae00;
+    }
+
+    .arrow {
+      font-size: 5vw; /* Reduced */
+      font-weight: bolder;
+      font-family: "ubuntu", sans-serif;
+    }
+
+    .left-arrow {
+      color: #ffae00;
+    }
+
+    .right-arrow {
+      color: white;
+    }
+
+    .home-button {
+      background-color: #ffae00;
+      color: black; /* Fixed color contrast */
+      padding: 10px 20px;
+      font-size: 1.5rem;
+      font-weight: bolder;
+      border: none;
+      border-radius: 26px;
+      cursor: pointer;
+      text-transform: lowercase;
+      font-family: "ubuntu", sans-serif;
+      margin-bottom: 1rem;
+      justify-content: center;
+    }
+
+    @media (max-width: 600px) {
+      .ts-container {
+        font-size: 20vw;
+        margin: 0 1vw;
+      }
+      .la-container, .ra-container, .arrow {
+        font-size: 6vw;
+      }
+      .home-button {
+        font-size: 1.2rem;
+        padding: 8px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="la-container">
+    <span class="la"><span class="lowercase">tushar</span></span>
+  </div>
+
+  <div class="arrow left-arrow">←</div>
+
+  <div class="ts-container">
+    <span class="t"><span class="lowercase">t</span></span>
+    <span class="s"><span class="lowercase">s</span></span> 
+  </div>
+
+  <div class="arrow right-arrow">→</div>
+
+  <div class="ra-container">
+    <span class="ra"><span class="lowercase">srivastava</span></span>
+  </div>
+</div>
+
+<!-- Home Button -->
+<a href="index.html"><button class="home-button">Home</button></a>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card UI Design</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="profile-card">
+    <div class="image">
+      <img src="assets/images/favicon.jpg" alt="" class="profile-img" />
+    </div>
+    <div class="text-data">
+      <span class="name">Tushar Srivastava</span>
+      <span class="job">DevOps Engineer</span>
+    </div>
+    <div class="media-buttons">
+      <a href="https://www.facebook.com/tusharrbl" style="background: #4267b2" class="link">
+        <i class="bx bxl-facebook"></i>
+      </a>
+      <a href="https://www.twitter.com/tushar_rbl" style="background: #1da1f2" class="link">
+        <i class="bx bxl-twitter"></i>
+      </a>
+      <a href="https://www.instagram.com/kshitiz_tushar" style="background: #e1306c" class="link">
+        <i class="bx bxl-instagram"></i>
+      </a>
+      <a href="https://www.youtube.com/@TryKaro2024" style="background: #ff0000" class="link">
+        <i class="bx bxl-youtube"></i>
+      </a>
+    </div>
+    <div class="buttons">
+      <button class="button" onclick="location.href='index.html'">Home</button>
+      <button class="button show-modal">Show QR Code</button>
+    </div>
+    
+  </div>
+  <!-------------------------------------------- QR Popup Section ----------------------------------------------->
+  <!-------------------------------------------- QR Popup Section ----------------------------------------------->
+  <!-------------------------------------------- QR Popup Section ----------------------------------------------->
+  <!-------------------------------------------- QR Popup Section ----------------------------------------------->
+  <section>
+    <span class="overlay"></span>
+    <div class="modal-box">
+      <img src="./assets/images/tsQR.png" alt="QR Code" class="qr-image" />
+      <h2>Hey, Open Scanner App !!</h2>
+      <h3>Tushar Srivastava vCard</h3>
+      <div class="buttons">
+        <button class="close-btn">Back</button>
+        <a href="./assets/images/tsQR.png" download>
+          <button type="button">Download QR Code</button>
+        </a>
+      </div>
+      
+  </section>
+
+  <!-- JS for Popup -->
+  <script>
+    const section = document.querySelector("section"),
+      overlay = document.querySelector(".overlay"),
+      showBtn = document.querySelector(".show-modal"),
+      closeBtn = document.querySelector(".close-btn");
+
+    showBtn.addEventListener("click", () => section.classList.add("active"));
+    overlay.addEventListener("click", () => section.classList.remove("active"));
+    closeBtn.addEventListener("click", () => section.classList.remove("active"));
+  </script>
+</body>
+</html>
